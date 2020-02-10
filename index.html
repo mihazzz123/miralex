@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Шрифты  -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,700i,800,900&display=swap&subset=cyrillic-ext" rel="stylesheet">
+
+  <!-- slick  -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <title>MirAlex</title>
+</head>
+<body>
+
+  
+  <div class="modal-wrap" style="display: none"></div>
+  <div class="modal-video" style="display: none">
+    <iframe class="video" width="727" height="409" src="https://www.youtube.com/embed/YJwx72g9PwI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <i class="modal-close"></i>
+  </div>
+
+  <div class="modal-bay modal column" style="display: none">
+      <i class="modal-close"></i>
+      <span class="modal-title">оформить заказ</span>
+    <form method="POST" class="modal-form column">
+      <div class="offer-lost__block-input modal-input offer-lost__block-input-1">
+        <input type="text" required name="name" placeholder="Имя" class="offer-lost__input">
+      </div>
+      <div class="offer-lost__block-input modal-input offer-lost__block-input-2">
+        <input type="tel" required name="phone" placeholder="Телефон" class="offer-lost__input">
+      </div>
+      <div class="modal-checkbox flex">
+        <input type="checkbox" checked required id="checkbox" class="modal-checkbox__input">
+        <label class="modal-checkbox__label" for="checkbox">
+        </label>
+        <span class="modal-checkbox__text offer-lost__text">Вы соглашаетесь на обработку персональных данных
+          в соответствии с <a href="">Политикой конфиденциальности</a></span>
+      </div>
+      <button type="submit" class="button-main modal-button">Заказать со скидкой</button>
+    </form>
+  </div>
+  
+  <div class="modal-call modal column" style="display: none">
+      <i class="modal-close"></i>
+      <span class="modal-title">Заказать звонок</span>
+    <form method="POST" class="modal-form column">
+      <div class="offer-lost__block-input modal-input offer-lost__block-input-1">
+        <input type="text" required name="name" placeholder="Имя" class="offer-lost__input">
+      </div>
+      <div class="offer-lost__block-input modal-input offer-lost__block-input-2">
+        <input type="tel" required name="phone" placeholder="Телефон" class="offer-lost__input">
+      </div>
+      <div class="modal-checkbox flex">
+        <input type="checkbox" checked required id="checkbox" class="modal-checkbox__input">
+        <label class="modal-checkbox__label" for="checkbox">
+        </label>
+        <span class="modal-checkbox__text offer-lost__text">Вы соглашаетесь на обработку персональных данных
+          в соответствии с <a href="">Политикой конфиденциальности</a></span>
+      </div>
+      <button type="submit" class="button-main modal-button">Заказать звонок</button>
+    </form>
+  </div>
+  
+  
+  <header class="header">
+    <picture data-velocity="-0.3" class="parallax img_1">
+      <source  type="image/webp" srcset="img/parallax/img_1.webp">      
+      <img src="img/parallax/img_1.png" alt="" class="parallax__img">
+    </picture>
+    <picture data-velocity="-0.4" class="parallax img_2">
+      <source  type="image/webp" srcset="img/parallax/img_2.webp">      
+      <img src="img/parallax/img_2.png" alt="" class="parallax__img">
+    </picture>
+    <picture data-velocity="-0.4" class="parallax img_3">
+      <source  type="image/webp" srcset="img/parallax/img_3.webp">      
+      <img src="img/parallax/img_3.png" alt="" class="parallax__img">
+    </picture>
+    <picture data-velocity="-0.4" class="parallax img_4">
+      <source  type="image/webp" srcset="img/parallax/img_4.webp">      
+      <img src="img/parallax/img_4.png" alt="" class="parallax__img">
+    </picture>
+    <img data-velocity="-0.4" src="img/parallax/img_5.png" alt="" class="parallax img_5">
+    <!-- <picture data-velocity="-0.4" class="parallax img_5">
+      <source  type="image/webp" srcset="img/parallax/img_5.webp">      
+      <img src="img/parallax/img_5.png" alt="" class="parallax__img">
+    </picture> -->
+    <img data-velocity="-0.4" src="img/parallax/img_6.png" alt="" class="parallax img_6">
+    <!-- <picture data-velocity="-0.4" class="parallax img_6">
+      <source  type="image/webp" srcset="img/parallax/img_6.webp">      
+      <img data-velocity="-0.4" src="img/parallax/img_6.png" alt="" class="parallax__img">
+    </picture> -->
+    <picture data-velocity="-0.4" class="parallax img_7">
+      <source  type="image/webp" srcset="img/parallax/img_7.webp">      
+      <img src="img/parallax/img_7.png" alt="" class="parallax__img">
+    </picture>
+    <div class="container flex">
+
+      <div class="header-arrow column">
+        <div class="arrow-anim header-arrow__item"></div>
+        <div class="arrow-anim header-arrow__item"></div>
+        <div class="arrow-anim header-arrow__item"></div>
+        <div class="arrow-anim header-arrow__item"></div>
+        <div class="arrow-anim header-arrow__item"></div>
+        <div class="arrow-anim header-arrow__item"></div>
+        <div class="arrow-anim header-arrow__item"></div>
+        <div class="arrow-anim header-arrow__item"></div>
+        <div class="arrow-anim header-arrow__item"></div>
+        <div class="arrow-anim header-arrow__item-arrow"></div>
+      </div>
+
+      <div class="header-wrap column">
+
+        <div class="header-top flex">
+          <div class="header-logo center">
+            <img src="img/header/logo.png" alt="" class="header-logo__img">
+          </div>
+          <div class="header-contacts column">
+            <span class="header-contacts__number"><span>+7 980 </span> 60-50-70</span>
+            <span class="header-contacts__call">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 578.106 578.106" style="enable-background:new 0 0 578.106 578.106;" xml:space="preserve"><g><g>
+                  <path style="fill:#010002;" d="M577.83,456.128c1.225,9.385-1.635,17.545-8.568,24.48l-81.396,80.781 c-3.672,4.08-8.465,7.551-14.381,10.404c-5.916,2.857-11.729,4.693-17.439,5.508c-0.408,0-1.635,0.105-3.676,0.309 c-2.037,0.203-4.689,0.307-7.953,0.307c-7.754,0-20.301-1.326-37.641-3.979s-38.555-9.182-63.645-19.584 c-25.096-10.404-53.553-26.012-85.376-46.818c-31.823-20.805-65.688-49.367-101.592-85.68
+                  c-28.56-28.152-52.224-55.08-70.992-80.783c-18.768-25.705-33.864-49.471-45.288-71.299
+                  c-11.425-21.828-19.993-41.616-25.705-59.364S4.59,177.362,2.55,164.51s-2.856-22.95-2.448-30.294 c0.408-7.344,0.612-11.424,0.612-12.24c0.816-5.712,2.652-11.526,5.508-17.442s6.324-10.71,10.404-14.382L98.022,8.756 c5.712-5.712,12.24-8.568,19.584-8.568c5.304,0,9.996,1.53,14.076,4.59s7.548,6.834,10.404,11.322l65.484,124.236 c3.672,6.528,4.692,13.668,3.06,21.42c-1.632,7.752-5.1,14.28-10.404,19.584l-29.988,29.988c-0.816,0.816-1.53,2.142-2.142,3.978
+                  s-0.918,3.366-0.918,4.59c1.632,8.568,5.304,18.36,11.016,29.376c4.896,9.792,12.444,21.726,22.644,35.802 s24.684,30.293,43.452,48.653c18.36,18.77,34.68,33.354,48.96,43.76c14.277,10.4,26.215,18.053,35.803,22.949 c9.588,4.896,16.932,7.854,22.031,8.871l7.648,1.531c0.816,0,2.145-0.307,3.979-0.918c1.836-0.613,3.162-1.326,3.979-2.143
+                  l34.883-35.496c7.348-6.527,15.912-9.791,25.705-9.791c6.938,0,12.443,1.223,16.523,3.672h0.611l118.115,69.768 C571.098,441.238,576.197,447.968,577.83,456.128z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+              </svg>
+              <span class="open-modal-call">Заказать звонок</span>
+            </span>
+          </div>
+        </div>
+
+        <h1 class="header-title">
+          <span class="header-title__one">Горнолыжная маска</span>
+          <span class="header-title__two">miralex</span>
+          <span class="header-title__third">Надежная защита для всего лица</span>
+        </h1>
+        <div class="header-block column">
+          <div class="header-price column">
+            <span class="header-price__one">5 297 руб</span>
+            <span class="header-price__two">2 490 <sup>руб.</sup></span>
+            <div class="header-slide__sale mobile-768">Скидка 53%</div>
+            <a href="#" class="open-modal-bay button-main header-price__button">Заказать со скидкой</a>
+          </div>     
+          
+          <div class="header-slider flex">
+            <div class="header-slide__sale">Скидка<br>53%</div>
+            <div class="header-slider__arrows">
+            <div class="header-slider__arrow header-slider__arrow-left center">
+              <img src="img/arrow.svg" alt="">
+            </div>
+            <div class="header-slider__arrow header-slider__arrow-right center">
+              <img src="img/arrow.svg" alt="">
+            </div>
+          </div>
+          <div class="header-slider__wrap">
+            <div class="header-slide center">
+              <img src="img/header/img_4.png" alt="" class="header-slide__img">
+            </div>
+            <div class="header-slide center">
+              <img src="img/header/img_3.png" alt="" class="header-slide__img">
+            </div>
+            <div class="header-slide center">
+              <img src="img/header/img_2.png" alt="" class="header-slide__img">
+            </div>
+            <div class="header-slide center">
+              <img src="img/header/img_1.png" alt="" class="header-slide__img">
+            </div>
+            <div class="header-slide center">
+              <img src="img/header/img_4.png" alt="" class="header-slide__img">
+            </div>
+            <div class="header-slide center">
+              <img src="img/header/img_3.png" alt="" class="header-slide__img">
+            </div>
+            <div class="header-slide center">
+              <img src="img/header/img_2.png" alt="" class="header-slide__img">
+            </div>
+            <div class="header-slide center">
+              <img src="img/header/img_1.png" alt="" class="header-slide__img">
+            </div>
+            <div class="header-slide center">
+              <img src="img/header/img_4.png" alt="" class="header-slide__img">
+            </div>
+            <div class="header-slide center">
+              <img src="img/header/img_3.png" alt="" class="header-slide__img">
+            </div>
+            <div class="header-slide center">
+              <img src="img/header/img_2.png" alt="" class="header-slide__img">
+            </div>
+            <div class="header-slide center">
+              <img src="img/header/img_1.png" alt="" class="header-slide__img">
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+  </header>
+
+  <section class="main">
+    <div class="container main-wrap flex">
+      <div class="main-block main-block-1 column">
+        <div class="column main-block__item">
+          <div class="main-block__item-icon center">
+            <img src="img/main/icon-1.svg" alt="" class="main-block__item-img">
+          </div>
+          <h4 class="main-block__item-title">ГЕРМЕТИЧНОСТЬ</h4>
+          <span class="main-block__item-desc">Полнолицевая маска полностью предотвращает попадание снега и холода на лицо</span>
+        </div>
+        <div class="column main-block__item">
+          <div class="main-block__item-icon center">
+            <img src="img/main/icon-2.svg" alt="" class="main-block__item-img">
+          </div>
+          <h4 class="main-block__item-title">ВЕНТИЛЯЦИЯ</h4>
+          <span class="main-block__item-desc">Клапан, расположенный в нижней части маски, позволяет легко дышать вовремя езды</span>
+        </div>
+        <div class="column main-block__item">
+          <div class="main-block__item-icon center">
+            <img src="img/main/icon-3.svg" alt="" class="main-block__item-img">
+          </div>
+          <h4 class="main-block__item-title">ЛЕГКО ДЫШАТЬ</h4>
+          <span class="main-block__item-desc">Полнолицевая маска позволяет свободно дышать и ртом и носом</span>
+        </div>
+      </div>
+      <div class="main-block main-block-img center">
+        <picture class="main-img">
+          <source  type="image/webp" srcset="img/main/main-img.webp">      
+          <img src="img/main/main-img.png" alt="">
+        </picture>
+      </div>
+      <div class="main-block main-block-2 column">
+        <div class="column main-block__item">
+          <div class="main-block__item-icon center">
+            <img src="img/main/icon-4.svg" alt="" class="main-block__item-img">
+          </div>
+          <h4 class="main-block__item-title">НЕ ЗАПОТЕВАЕТ</h4>
+          <span class="main-block__item-desc">Эксклюзивные технологии вентиляции маски - не запотевает ни при каких условиях </span>
+        </div>
+        <div class="column main-block__item">
+          <div class="main-block__item-icon center">
+            <img src="img/main/icon-5.svg" alt="" class="main-block__item-img">
+          </div>
+          <h4 class="main-block__item-title">ПРАКТИЧНОСТЬ</h4>
+          <span class="main-block__item-desc">Изготовлена из сверхплотного материала который очень легкий и эластичный</span>
+        </div>
+        <div class="column main-block__item">
+          <div class="main-block__item-icon center">
+            <img src="img/main/icon-6.svg" alt="" class="main-block__item-img">
+          </div>
+          <h4 class="main-block__item-title">УГОЛ ОБЗОРА 180°</h4>
+          <span class="main-block__item-desc">Безопасная небьющаяся линза из поликарбоната</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer offer-one">
+    <picture data-velocity="-0.4" class="parallax img_8">
+      <source  type="image/webp" srcset="img/parallax/img_8.webp">      
+      <img src="img/parallax/img_8.png" alt="" class="parallax__img">
+    </picture>
+
+    <div class="container offer-wrap column">
+
+      <h2 class="title offer-title">УНИКАЛЬНАЯ ГОРНОЛЫЖНАЯ МАСКА</h2>
+      <span class="subtitle offer-subtitle">Сделайте себе приятный подарок, который украсит отдых незабываемыми впечатлениями</span>
+      <span class="offer-oldprice">Старая цена <s>5 297 руб.</s> </span>
+      <div class="offer-price">
+        <span class="offer-price__tag">2 490 </span>
+        <sup class="offer-price__valet"> руб.</sup>
+      </div>
+      <div class="offer-sale">Скидка 53%</div>
+      <span class="offer-timer__title">До конца акции осталось</span>
+      <div class="offer-timer"></div>
+      <a href="#" class="open-modal-bay button-main offer-button">Заказать со скидкой</a>
+      <span class="offer-count">Осталось <b> 11 </b> штук по акции</span>
+
+    </div>
+
+  </section>
+
+  <section class="desc">
+    <div class="container desc-wrap column">
+      <h2 class="title desc-title">преимещества маски Miralex</h2>
+      <span class="subtitle desc-subtitle">Лучший способ сохранить лицо в экстремальных условиях</span>
+      <div class="desc-block flex">
+        <div class="desc-item column">
+          <div class="desc-item__image">
+            <img src="img/desc/img_1.png" alt="" class="desc-item__image-img">
+          </div>
+          <span class="desc-item__text">Инновационная защита от запотевания стекол, эффективно отводит влагу до того, как та парообразуется на линзах, препятствуя обзору</span>
+        </div>
+        <div class="desc-item column">
+          <div class="desc-item__image">
+            <img src="img/desc/img_2.png" alt="" class="desc-item__image-img">
+          </div>
+          <span class="desc-item__text">Двойные линзы, изолирующие внутреннюю поверхность маски - в любую погоду вашому лицу будет сухо и тепло</span>
+        </div>
+        <div class="desc-item column">
+          <div class="desc-item__image">
+            <img src="img/desc/img_3.png" alt="" class="desc-item__image-img">
+          </div>
+          <span class="desc-item__text">Особое антибликовое покрытие позволяет беспрепятственно насладится окружающим видом, словно между вами и природой и нет преграды в виде стёкол</span>
+        </div>
+        <div class="desc-item column">
+          <div class="desc-item__image">
+            <img src="img/desc/img_4.png" alt="" class="desc-item__image-img">
+          </div>
+          <span class="desc-item__text">Ударопрочный пластик, надежно защищающий ваше лицо от травм</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo">
+    <div class="container promo-wrap column">
+      <div class="promo-row flex">
+        <div class="promo-col promo-col-1 column">
+          <h4 class="promo-title">Яркий дизайн и высокое качество материала!</h4>
+          <span class="promo-subtitle">Будь стильным при любой погоде, привлекай внимание и наслаждайся отдыхом!</span>
+        </div>
+        <div class="promo-col column">
+          <ul class="promo-list">
+            <li class="promo-string">Качественный материал премиум уровня, практически не убиваемая прочность</li>
+            <li class="promo-string">Можно снять маску и оставить очки, или наоборот - под ситуацию!</li>
+            <li class="promo-string">Ударопрочный пластик, надежно защищающий ваше лицо от травм</li>
+            <li class="promo-string">Инновационная защита от запотевания стекол, эффективно отводит влагу
+                до того, как та пар образуется на линзах, препятствуя обзору</li>
+            <li class="promo-string">Особое антибликовое покрытие позволяет беспрепятственно насладится
+                окружающим видом, словно между вами и природой и нет преграды
+                в виде стёкол</li>
+          </ul>
+        </div>
+      </div>
+      <div class="promo-items flex">
+        <div class="promo-item promo-item-1"></div>
+        <div class="promo-item promo-item-2"></div>
+        <div class="promo-item promo-item-3"></div>
+        <div class="promo-item promo-item-4"></div>
+        <div class="promo-item promo-item-5"></div>
+        <div class="promo-item promo-item-6"></div>
+        <div class="promo-item promo-item-7"></div>
+        <div class="promo-item promo-item-8"></div>
+        <div class="promo-item promo-item-9"></div>
+        <div class="promo-item promo-item-10"></div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="sport">
+    
+    <i class="sport-arrow"></i>
+    <div class="container sport-wrap column">
+      <h2 class="title sport-title">Идеально подходит для занятий
+        спортом на свежем воздухе</h2>
+      <div class="sport-block flex">
+        <div class="sport-item flex">
+          <div class="center sport-item__image">
+            <img src="img/sport/img_10.png" alt="" class="sport-item__img">
+          </div>
+          <div class="sport-item__title">На велосипеде</div>
+        </div>
+        <div class="sport-item flex">
+          <div class="center sport-item__image">
+            <img src="img/sport/img_1.png" alt="" class="sport-item__img">
+          </div>
+          <div class="sport-item__title">На мотоцикле</div>
+        </div>
+        <div class="sport-item flex">
+          <div class="center sport-item__image">
+            <img src="img/sport/img_2.png" alt="" class="sport-item__img">
+          </div>
+          <div class="sport-item__title">Снегоходах</div>
+        </div>
+        <div class="sport-item flex">
+          <div class="center sport-item__image">
+            <img src="img/sport/img_5.png" alt="" class="sport-item__img">
+          </div>
+          <div class="sport-item__title">Верховой езде</div>
+        </div>
+        <div class="sport-item flex">
+          <div class="center sport-item__image">
+            <img src="img/sport/img_3.png" alt="" class="sport-item__img">
+          </div>
+          <div class="sport-item__title">Страйкболе</div>
+        </div>
+        <div class="sport-item flex">
+          <div class="center sport-item__image">
+            <img src="img/sport/img_4.png" alt="" class="sport-item__img">
+          </div>
+          <div class="sport-item__title">Desert Offroad Riding Racing</div>
+        </div>
+        <div class="sport-item flex">
+          <div class="center sport-item__image">
+            <img src="img/sport/img_6.png" alt="" class="sport-item__img">
+          </div>
+          <div class="sport-item__title">Катании на сноуборде или лыжах </div>
+        </div>
+        <div class="sport-item flex">
+          <div class="center sport-item__image">
+            <img src="img/sport/img_9.png" alt="" class="sport-item__img">
+          </div>
+          <div class="sport-item__title">Как реквизит для фильма</div>
+        </div>
+        <div class="sport-item flex">
+          <div class="center sport-item__image">
+            <img src="img/sport/img_7.png" alt="" class="sport-item__img">
+          </div>
+          <div class="sport-item__title">Вечеринка</div>
+        </div>
+        <div class="sport-item flex">
+          <div class="center sport-item__image">
+            <img src="img/sport/img_8.png" alt="" class="sport-item__img">
+          </div>
+          <div class="sport-item__title">Подарок для друзей или семей</div>
+        </div>
+        <div class="sport-item sport-item__lost center">
+            <svg class="sport-play__circle" x="0px" y="0px" viewBox="0 0 30.051 30.051">
+              <g><path d="M19.982,14.438l-6.24-4.536c-0.229-0.166-0.533-0.191-0.784-0.062c-0.253,0.128-0.411,0.388-0.411,0.669v9.069   c0,0.284,0.158,0.543,0.411,0.671c0.107,0.054,0.224,0.081,0.342,0.081c0.154,0,0.31-0.049,0.442-0.146l6.24-4.532   c0.197-0.145,0.312-0.369,0.312-0.607C20.295,14.803,20.177,14.58,19.982,14.438z" fill="#FFFFFF"/><path d="M15.026,0.002C6.726,0.002,0,6.728,0,15.028c0,8.297,6.726,15.021,15.026,15.021c8.298,0,15.025-6.725,15.025-15.021   C30.052,6.728,23.324,0.002,15.026,0.002z M15.026,27.542c-6.912,0-12.516-5.601-12.516-12.514c0-6.91,5.604-12.518,12.516-12.518   c6.911,0,12.514,5.607,12.514,12.518C27.541,21.941,21.937,27.542,15.026,27.542z" fill="#FFFFFF"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+            </svg>
+          <div class="sport-play__text">Немного подробностей<br>в нашем ролике</div>
+          <div class="header-arrow column">
+              <div class="arrow-anim header-arrow__item"></div>
+              <div class="arrow-anim header-arrow__item"></div>
+              <div class="arrow-anim header-arrow__item"></div>
+              <div class="arrow-anim header-arrow__item"></div>
+              <div class="arrow-anim header-arrow__item"></div>
+              <div class="arrow-anim header-arrow__item"></div>
+              <div class="arrow-anim header-arrow__item"></div>
+              <div class="arrow-anim header-arrow__item"></div>
+              <div class="arrow-anim header-arrow__item"></div>
+              <div class="arrow-anim header-arrow__item-arrow"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer-two">
+    <div class="container offer-wrap column">
+      <h3 class="offer-two__title">Успейте заказать по супер цене</h3>
+      <div class="offer-two__block flex">
+        <div class="offer-two__col offer-two__price column">
+            <span class="offer-oldprice">Старая цена <s>5 297 руб.</s> </span>
+            <div class="offer-price">
+              <span class="offer-price__tag">2 490 </span>
+              <sup class="offer-price__valet"> руб.</sup>
+            </div>
+            <div class="offer-two__sale">Скидка 53%</div>
+        </div>
+        <div class="offer-two__col offer-two__timer column">
+          <span class="offer-two__timer-title">До конца акции осталось</span>
+          <div class="offer-timer"></div>
+        </div>
+        <div class="offer-two__col offer-two__bay column">
+          <span class="offer-two__count">Осталось <b> 11 </b> штук по акции</span>
+          <a href="#" class="open-modal-bay offer-two__button button-main">Купить сейчас</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="payment">
+    <div class="container payment-wrap column">
+      <h2 class="title payment-title">Оплата после получения!</h2>
+      <div class="payment-block flex">
+        <div class="payment-item column">
+          <div class="payment-item__image center">
+            <span class="payment-item__number">1</span>
+            <img src="img/payment/click.svg" alt="" class="payment-item__image-img">
+          </div>
+          <span class="payment-item__desc">Оставляете заявку на нашем сайте</span>
+        </div>
+        <div class="payment-item column">
+          <div class="payment-item__image center">
+            <span class="payment-item__number">2</span>
+            <img src="img/payment/call-center.svg" alt="" class="payment-item__image-img">
+          </div>
+          <span class="payment-item__desc">Наш менеджер уточняет детали заказа</span>
+        </div>
+        <div class="payment-item column">
+          <div class="payment-item__image center">
+            <span class="payment-item__number">3</span>
+            <img src="img/payment/package.svg" alt="" class="payment-item__image-img">
+          </div>
+          <span class="payment-item__desc">Доставляем ваш заказ в течение 1-6 дней <br><span>Стоимость доставки по всей России 300 рублей</span></span>
+        </div>
+        <div class="payment-item column">
+          <div class="payment-item__image center">
+            <span class="payment-item__number">4</span>
+            <img src="img/payment/money.svg" alt="" class="payment-item__image-img">
+          </div>
+          <span class="payment-item__desc">Оплачиваете его при получении</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container faq-wrap column">
+      <h2 class="title">Популярные вопросы</h2>
+      <div class="faq-block column">
+        <div class="faq-item">
+          <div class="faq-item__title">
+            <span class="faq-item__num">1.</span>
+            <span class="faq-item__question">Зачем на маске присоединена нижняя часть?</span>
+            <i class="faq-item__open"></i>
+          </div>
+          <div class="faq-answer" style="display: none">
+            <span class="faq-answer__text">
+            По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
+          </span></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-item__title">
+            <span class="faq-item__num">2.</span>
+            <span class="faq-item__question">Почему маска не запотевает?</span>
+            <i class="faq-item__open"></i>
+          </div>
+          <div class="faq-answer" style="display: none">
+            <span class="faq-answer__text">
+            По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
+          </span></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-item__title">
+            <span class="faq-item__num">3.</span>
+            <span class="faq-item__question">В чем особенности ухода за маской MirAlex?</span>
+            <i class="faq-item__open"></i>
+          </div>
+          <div class="faq-answer" style="display: none">
+            <span class="faq-answer__text">
+            По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
+          </span></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-item__title">
+            <span class="faq-item__num">4.</span>
+            <span class="faq-item__question">Хорошо ли видно в защитной маски?</span>
+            <i class="faq-item__open"></i>
+          </div>
+          <div class="faq-answer" style="display: none">
+            <span class="faq-answer__text">
+            По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
+          </span></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-item__title">
+            <span class="faq-item__num">5.</span>
+            <span class="faq-item__question">Какого размера бывают маски?</span>
+            <i class="faq-item__open"></i>
+          </div>
+          <div class="faq-answer" style="display: none">
+            <span class="faq-answer__text">
+            По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
+          </span></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-item__title">
+            <span class="faq-item__num">6.</span>
+            <span class="faq-item__question">Способы доставки и оплаты защитных масок?</span>
+            <i class="faq-item__open"></i>
+          </div>
+          <div class="faq-answer" style="display: none">
+            <span class="faq-answer__text">
+            По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
+          </span></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-item__title">
+            <span class="faq-item__num">7.</span>
+            <span class="faq-item__question">Хорошо ли слышно в защитной маске?</span>
+            <i class="faq-item__open"></i>
+          </div>
+          <div class="faq-answer" style="display: none">
+            <span class="faq-answer__text">
+            По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
+          </span></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-item__title">
+            <span class="faq-item__num">8.</span>
+            <span class="faq-item__question">Какие материалы используются в масках?</span>
+            <i class="faq-item__open"></i>
+          </div>
+          <div class="faq-answer" style="display: none">
+            <span class="faq-answer__text">
+            По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
+          </span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container feedback-wrap column">
+      <h2 class="title">отзывы клиентов</h2>
+      <div class="flex feedback-block">
+        <div class="feedback-item flex">
+          <img src="img/quote.svg" alt="" class="feedback-item__quote">
+          <div class="feedback-item__image column">
+            <img src="img/feedback/img1.png" alt="" class="feedback-item__image-img">
+            <span class="feedback-item__name">Дмитрий</span>
+            <span class="feedback-item__city">г. Москва</span>
+          </div>
+          <span class="feedback-text">Я покупал маску в этом магазине совсем недавно - отправлялись с мужиками на отдых, но не  . Однако маска просто крутейшая - все мои знакомые уже по 100 раз перефоткались с ней, не могут оторваться, говорят - «Топовая вещица»! Благодаря маске я познакомился с интересной девушкой, которой понравилась моя аватарка с маской. На следующий раз поеду отдыхать с ней!</span>
+        </div>
+        <div class="feedback-item flex">
+          <img src="img/quote.svg" alt="" class="feedback-item__quote">
+          <div class="feedback-item__image column">
+            <img src="img/feedback/img2.png" alt="" class="feedback-item__image-img">
+            <span class="feedback-item__name">Олег</span>
+            <span class="feedback-item__city">г. Таганрог</span>
+          </div>
+          <span class="feedback-text">Отдыхали всей семьей на горнолыжном курорте. У жены треснула маска другой марки, я ей дал примерить свою, Миралекс - подошла идеально! Оказывается, настроить можно даже на такое миниатюрное лицо, как у моей любимой. Придется заказывать еще одну маску - не отдает! Понравилась, и все тут!</span>
+        </div>
+        <div class="feedback-item flex">
+          <img src="img/quote.svg" alt="" class="feedback-item__quote">
+          <div class="feedback-item__image column">
+            <img src="img/feedback/img3.png" alt="" class="feedback-item__image-img">
+            <span class="feedback-item__name">Сергей</span>
+            <span class="feedback-item__city">г. Ростов на Дону</span>
+          </div>
+          <span class="feedback-text">Она так много пережила, что я не могу поверить в то, как она выглядит сейчас. Она совсем новая до сих пор! Я обожаю экстремальный вид спорта и выгляжу в этой маске мега-эпично - я снимаю на камеру практически все передвижения и выгляжу очень круто! Дизайн подошел к костюму, уже посоветовала подругам! Видимость в маске на 10000%!</span>
+        </div>
+        <div class="feedback-item flex">
+          <img src="img/quote.svg" alt="" class="feedback-item__quote">
+          <div class="feedback-item__image column">
+            <img src="img/feedback/img4.png" alt="" class="feedback-item__image-img">
+            <span class="feedback-item__name">Екатерина</span>
+            <span class="feedback-item__city">г. Донецк</span>
+          </div>
+          <span class="feedback-text">Катались на мотоциклах с друзьями, и я увидела очень крутого парня в такой маске. Решила спросить марку, чтобы познакомиться… В итоге - теперь мы пара, а я обожаю, когда он носит эту маску. Фетиш наверное такой!.. А маска прочная - аварий много перенесла, я та еще водила. К счастью, никто не пострадал. И на маске царапин нет - чудо прям.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="photo">
+    <div class="container photo-wrap column">
+      <h2 class="title">Галерея фото</h2>
+      <div class="photo-slider__arrows">
+        <div class="photo-slider__arrow photo-slider__arrow-left"></div>
+        <div class="photo-slider__arrow photo-slider__arrow-right"></div>
+      </div>
+      <div class="photo-slider flex">
+        <div class="photo-slide center"><img src="img/photo/img_1.jpg" alt="" class="photo-slider__img"></div>
+        <div class="photo-slide center"><img src="img/photo/img_2.jpg" alt="" class="photo-slider__img"></div>
+        <div class="photo-slide center"><img src="img/photo/img_3.jpg" alt="" class="photo-slider__img"></div>
+        <div class="photo-slide center"><img src="img/photo/img_4.jpg" alt="" class="photo-slider__img"></div>
+        <div class="photo-slide center"><img src="img/photo/img_1.jpg" alt="" class="photo-slider__img"></div>
+        <div class="photo-slide center"><img src="img/photo/img_2.jpg" alt="" class="photo-slider__img"></div>
+        <div class="photo-slide center"><img src="img/photo/img_3.jpg" alt="" class="photo-slider__img"></div>
+        <div class="photo-slide center"><img src="img/photo/img_4.jpg" alt="" class="photo-slider__img"></div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="seo">
+    <div class="container seo-wrap flex">
+      <div class="seo-col column">
+        <h3>Пару слов о масках“Miralex” в заключение</h3>
+        <p>Маски “MirAlex” - очки защитят глаза
+          от ветра, снега и холода и защитить
+          от ультрафиолетового излучени.
+        </p>
+        <p>С противотуманным покрытием для
+          линз, вы получите четкое визуальное
+          наслаждение.
+        </p>
+        <p>
+          Ударопрочный пластик, защитит
+          ваше лицо от травм, снега и ветра.
+        </p>
+      </div>
+      <div class="seo-col seo-desc column">
+        <p>Неоспоримым преимуществом масок MirAlex является их универсальность, горнолыжную маску  MirAlex можно использовать в качестве маски для снегохода и маски для сноуборда.  Кроме того, летом Вы сможете использовать ее для катания на квадроцикле, скутере или кроссовике. Таким образом одна маска способна заменить сразу несколько масок.</p>
+        <p> Разработаны с учетом совместимости с большинством современных горнолыжных и снегоходных шлемов. Поэтому у Вас не возникнет проблем с использованием маски вместе со шлемом.</p>
+        <p>Надежно защищает Ваше лицо от встречного ветра и снега, а также всевозможных посторонних предметов, которые могут влететь в лицо во время движения, при этом позволяя свободно дышать на любой скорости и при любых погодных условиях. </p>
+        <p> Маска является неотъемлемой частью экипировки для зимних видов спорта. Поэтому не стоит экономить на данном элементе экипировки. Хорошая маска прослужит Вам не один год и позволит получить дополнительный комфорт при езде на снегоходе или катании на горных лыжах. </p>
+        <p>Неоспоримым преимуществом масок MirAlex является их универсальность, горнолыжную маску  MirAlex можно использовать в качестве маски для снегохода и маски для сноуборда.  Кроме того, летом Вы сможете использовать ее для катания на квадроцикле, скутере или кроссовике. Таким образом одна маска способна заменить сразу несколько масок.</p>
+        <p> Разработаны с учетом совместимости с большинством современных горнолыжных и снегоходных шлемов. Поэтому у Вас не возникнет проблем с использованием маски вместе со шлемом.</p>
+        <p>Надежно защищает Ваше лицо от встречного ветра и снега, а также всевозможных посторонних предметов, которые могут влететь в лицо во время движения, при этом позволяя свободно дышать на любой скорости и при любых погодных условиях. </p>
+        <p> Маска является неотъемлемой частью экипировки для зимних видов спорта. Поэтому не стоит экономить на данном элементе экипировки. Хорошая маска прослужит Вам не один год и позволит получить дополнительный комфорт при езде на снегоходе или катании на горных лыжах. </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="offer-lost">
+    <picture data-velocity="-0.7" class="parallax img_9">
+      <source  type="image/webp" srcset="img/parallax/img_9.webp">      
+      <img src="img/parallax/img_9.png" alt="" class="parallax__img">
+    </picture>
+    <div class="container offer-lost__wrap column">
+      <h3 class="title offer-title">Не упустите шанс и закажите сейчас</h3>
+      <span class="offer-oldprice">Старая цена <s>5 297 руб.</s> </span>
+      <div class="offer-price">
+        <span class="offer-price__tag">2 490 </span>
+        <sup class="offer-price__valet"> руб.</sup>
+      </div>
+      <div class="offer-sale">Скидка 53%</div>
+      <span class="offer-count">Осталось <b> 11 </b> штук по акции, до конца акции:</span>
+      <div class="offer-timer"></div>
+      <form  id="footer" method="POST" class="offer-lost__form column">
+        <div class="offer-lost__row flex">
+          <div class="offer-lost__block-input offer-lost__block-input-1">
+            <input type="text" required name="name" placeholder="Имя" class="offer-lost__input">
+          </div>
+          <div class="offer-lost__block-input offer-lost__block-input-2">
+            <input type="tel" required name="phone" placeholder="Телефон" class="offer-lost__input">
+          </div>
+        </div>
+        <button type="submit" class="offer-lost__button button-main">Заказать со скидкой</button>
+        <div class="offer-lost__text">
+          <span>Нажимая на кнопку я согласен </span>
+          <a href="#">с политикой конфиденциальности. <br> Пользовательское соглашение</a>
+        </div>
+      </form>
+
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/jquery.syotimer.min.js"></script>
+  <script src="js/scroll.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

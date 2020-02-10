@@ -1,0 +1,116 @@
+.sport
+  padding-top: 83px
+  padding-bottom: 70px
+  background-image: url(../img/sport/sport-bg.png), url(../img/sport/clouds.png) 
+  background-repeat: no-repeat
+  background-position: center bottom
+  background-size: cover
+  position: relative
+  &-arrow
+    display: block
+    position: absolute
+    top: 0
+    left: calc(50% - 28px)
+    border-left: 28px solid transparent
+    border-right: 28px solid transparent
+    border-top: 20px solid #ffffff
+    width: 0
+    height: 0
+    // cursor: pointer
+  &-title 
+    max-width: 690px
+    line-height: 1.3
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 40px
+  &-block
+    flex-direction: column
+    flex-wrap: wrap
+    max-height: 430px
+  &-item
+    margin-bottom: 20px
+    align-items: center
+    width: 31%
+    &__image 
+      width: 80px
+      height: 80px
+      background: #ffffff
+      border-radius: 100%
+      z-index: 0
+    &__img
+      z-index: 1
+    &__title
+      font-size: 1.2em
+      margin-left: 20px
+    &__lost
+      text-decoration: none
+      padding-left: 20px
+      padding-right: 20px
+      cursor: pointer
+      width: 370px
+      height: 180px
+      border-radius: 0 30px 30px
+      background-color: #1565c0
+      background-image: url(../img/sport/video-bg.png)
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 100% 100%
+      box-shadow: 0 20px 30px rgba(0, 52, 112, 0.3)
+    & .header-arrow
+      left: auto
+  &-play 
+    &__circle 
+      width: 62px
+      height: 62px
+      transition: 0.3s
+    &__text 
+      padding-left: 20px
+      color: #ffffff
+      text-align: left
+      font-size: 18px
+      font-weight: 700
+      transition: 0.3s
+
+@media (min-width: 1024px)
+  .sport-item__lost:hover
+    & .sport-play__text 
+      color: rgba(255, 255, 255, 0.4)
+      text-decoration: underline
+    & .sport-play__circle path
+      fill: rgba(255, 255, 255, 0.4)
+@media (max-width: 1024px)
+  .sport
+    &-block
+      max-height: 690px
+      align-items: center
+    &-item 
+      width: 47%
+@media (max-width: 768px)
+  .sport
+    padding-top: 60px
+    padding-bottom: 35px
+    background-image: linear-gradient(to bottom, #e3f2fd 90%, #ffffff 100%);
+    &-title 
+      line-height: 1.4
+      margin-bottom: 0
+    &-block
+      max-height: 100%
+    &-item 
+      width: 98%
+      max-width: 380px
+      &__lost
+        margin-top: 25px
+      &__title 
+        margin-left: 35px
+        font-size: 14px
+        line-height: 2
+      &__lost
+        width: 290px
+        height: 180px
+    &-play 
+      &__circle
+        min-width: 62px
+        min-height: 62px
+      &__text 
+        font-size: 15px
+        font-weight: 700

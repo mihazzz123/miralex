@@ -1,0 +1,85 @@
+.photo
+  padding-top: 50px
+  & .title
+    margin-bottom: 40px
+  &-wrap 
+    position: relative
+  &-slider
+    width: 100%
+    &__arrow
+      display: none
+      position: absolute 
+      width: 60px
+      height: 60px
+      border-radius: 100%
+      background-color: #ffffff
+      z-index: 5
+      cursor: pointer
+      top: calc(50% - 30px)
+      transition: 0.3s
+      &:after
+        content: ""
+        width: 50px
+        height: 50px
+        left: 5px
+        top: 5px
+        background-color: #ebf0f4
+        background-image: url(../img/arrow-blue.svg)
+        background-size: 30%
+        background-repeat: no-repeat
+        background-position: center center
+        display: block
+        position: absolute
+        border-radius: 100%
+        z-index: 6
+      &-left
+        left: -30px
+      &-right 
+        right: -30px
+        transform: rotate(180deg)
+    &__img 
+      margin-left: auto
+      margin-right: auto
+
+
+
+.photo-wrap
+  & button
+    display: none !important
+  & .slick-dots
+    margin-top: -40px
+    transform: rotate(-90deg)
+    position: absolute
+    margin-left: auto
+    margin-right: auto
+    left: 50%
+    list-style-image: url(../img/photo/1.png)
+    padding: 0
+    & li 
+      padding: 0
+      margin: 0
+      cursor: pointer
+  & .slick-active
+    list-style-image: url(../img/photo/2.png)
+
+
+@media (min-width: 1024px)
+  .photo-slider__arrow:hover
+    &:after
+      background-image: url(../img/arrow.svg)
+      background-color: #1565c0
+
+
+@media (max-width: 1200px)
+  .photo-slider__arrow-left
+    left: -14px
+  .photo-slider__arrow-right
+    right: -14px
+@media (max-width: 786px)
+  .photo
+    padding-top: 10px
+    & .title 
+      margin-bottom: 30px;
+  .photo-wrap .slick-dots
+    margin-top: -30px
+  

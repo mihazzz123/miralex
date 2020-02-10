@@ -1,0 +1,63 @@
+.desc
+  margin-top: -200px
+  padding-top: 40px
+  padding-bottom: 100px
+  background-image: url(../img/desc/desc-bg.jpg)
+  background-position: center top
+  background-repeat: no-repeat
+  background-size: cover
+  &-subtitle
+    margin-bottom: 55px
+  &-block 
+    justify-content: space-between
+  &-item 
+    display: flex
+    align-items: center
+    padding: 15px
+    height: 340px
+    width: 23%
+    border-radius: 30px 0 30px 30px
+    background-color: #ffffff
+    box-shadow: 0 20px 30px rgba(0, 52, 112, 0.2) 
+    margin-bottom: 60px
+    &:last-child
+      margin-bottom: 40px
+    &__image
+      position: relative
+      height: 167px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-bottom: 17px
+    &__text 
+      text-align: center
+      color: #78909c
+      font-size: 13px
+      line-height: 1.65
+      font-weight: 500
+
+
+
+@media (max-width: 1024px)
+  .desc
+    &-block 
+      flex-wrap: wrap
+      justify-content: space-around
+    &-item 
+      width: 31%
+@media (max-width: 1024px)
+  .desc
+@media (max-width: 768px)
+  .desc
+    padding-top: 57px
+    padding-bottom: 30px
+    margin-top: 0
+    background-image: none
+    background-color: #e3f2fd
+    &-item 
+      width: 48%
+      margin-bottom: 20px
+@media (max-width: 500px)
+  .desc
+    &-item 
+      width: 98%

@@ -1,0 +1,110 @@
+.modal
+  padding: 60px 60px 50px 60px
+  position: fixed
+  z-index: 101
+  max-width: 490px
+  max-height: 460px
+  box-shadow: 0 20px 30px rgba(0, 52, 112, 0.2)
+  border-radius: 10px
+  background-color: #f9f9f9
+  left: calc(50% - 245px)
+  top: 10%
+  &-wrap 
+    width: 100%
+    height: 100%
+    background-color: #323943
+    opacity: 0.8
+    position: fixed
+    z-index: 100
+  &-close 
+    position: absolute
+    width: 15px
+    height: 15px
+    right: 15px
+    top: 15px
+    cursor: pointer
+    &:after, &:before
+      left: 0
+      top: 7.5px
+      content: ""
+      position: absolute
+      width: 15px
+      height: 2px
+      background-color: #b9d6e3
+    &:before
+      transform: rotate(-45deg)
+    &:after
+      transform: rotate(45deg)
+  &-call 
+  &-title 
+    color: #06263d
+    font-size: 1.8em
+    margin-bottom: 40px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+  &-input 
+    margin-bottom: 20px
+    margin-left: 0
+    margin-right: 0
+    width: 100%
+  &-checkbox
+    align-items: center
+    margin-bottom: 25px
+    width: 100%
+    color: #7a8991
+    font-size: 0.8em
+    &__text 
+      font-size: 12px
+      line-height: 1.2
+    &__input
+      width: 0.001px
+      height: 0.001px
+      opacity: 0
+      z-index: -1
+    &__label
+      position: relative
+      cursor: pointer
+      margin-right: 10px
+      min-width: 20px
+      min-height: 20px
+      border-radius: 1px
+      border: 1px solid #ebf0f4
+      background-color: #ebf0f4
+.modal-checkbox__input:checked + .modal-checkbox__label
+  background-image: url(../img/check.svg)
+  background-size: 80%
+  background-repeat: no-repeat
+  background-position: center center
+
+
+.modal-video
+  position: fixed
+  z-index: 101
+  left: calc(50% - 363px)
+  top: calc(50% - 208px)
+  & .modal-close
+    right: -20px
+    top: -20px
+
+@media (max-width: 768px)
+  .video
+    width: 100% !important
+  .modal-video
+    width: 100% 
+    left: auto
+    & .modal-close
+      right: 20px
+      top: -20px
+ 
+
+@media (max-width: 500px)
+  .modal
+      left: auto 
+      width: 100%
+      padding: 30px 10px 20px 10px
+@media (max-height: 500px)
+  .modal
+    top: 20px
+    &-title 
+      margin-bottom: 20px

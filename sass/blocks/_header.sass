@@ -1,0 +1,444 @@
+.header
+  background-image: url(../img/header/header-bg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center top
+  // background-attachment: fixed
+  // padding-bottom: 20px
+  z-index: 1
+  &-wrap 
+    width: 100%
+  &-top 
+    justify-content: space-between
+    align-items: center
+    padding-top: 25px
+    padding-bottom: 25px
+  &-logo 
+    width: 90px
+    height: 90px
+    &__img 
+      max-height: 100%
+  &-contacts
+    text-align: right
+    &__number
+      color: #ffffff
+      font-size: 22px
+      letter-spacing: 0.22px
+      font-weight: 600
+      margin-bottom: 10px
+      & span 
+        font-weight: 400
+        color: #d1e2f0
+    &__call
+      display: inline
+      color: #ffd600
+      font-size: 14px
+      font-weight: 500
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      // text-decoration: underline
+      z-index: 99
+      & span 
+        margin-bottom: 2px
+        cursor: pointer
+        border-bottom: 1px solid #ffd600
+      & svg 
+        display: inline-block
+        width: 15px
+        height: 15px
+        margin-right: 10px
+        & path
+          fill: #ffffff !important
+  &-title 
+    color: #ffffff  
+    display: block
+    margin-top: 0px
+    margin-bottom: 45px
+    &__one
+      display: block
+      width: 100%
+      text-shadow: 0 3px 2px rgba(0, 71, 123, 0.6)
+      font-size: 83px
+      font-weight: 700
+      font-style: italic
+      text-transform: uppercase
+    &__two
+      text-transform: uppercase
+      font-size: 83px
+      text-shadow: 0 3px 2px rgba(0, 71, 123, 0.6)
+      font-weight: 900
+      font-style: italic
+    &__third
+      margin-left: 36px
+      display: inline-block
+      max-width: 350px
+      color: #ffd600
+      text-shadow: 0 3px 2px rgba(123, 53, 0, 0.6)
+      font-size: 1em
+      font-weight: 700
+      font-style: italic
+      letter-spacing: 0.32px
+  &-price 
+    max-width: 330px
+    z-index: 2
+    color: #ffffff  
+    text-shadow: 0 2px 1px rgba(0, 71, 123, 0.8)
+    &__one
+      font-size: 24px
+      text-decoration: line-through
+      padding-bottom: 4px
+    &__two
+      font-size: 62px
+      font-weight: 700
+      font-style: italic
+      & sup 
+        font-size: 60%
+    &__button 
+      margin-top: 30px
+      max-width: 300px
+      cursor: pointer
+  &-slider 
+    position: relative
+    margin-left: auto
+    margin-right: auto
+    margin-top: -210px
+    height: 560px
+    // display: none
+    // position: absolute
+    width: 100%
+    max-width: 700px
+    justify-content: center
+    &__wrap
+      max-width: 700px
+      display: flex
+      margin-left: auto
+      margin-right: auto
+      justify-content: center
+    &__arrow
+      display: none
+      position: absolute
+      bottom: 0
+      border-radius: 100%
+      width: 71px
+      height: 71px
+      bottom: 120px
+      z-index: 1
+      box-shadow: 0 2px 1px #b15f08, 0 10px 20px rgba(255, 173, 0, 0.4)
+      background-image: linear-gradient(to top, #ffab00 0%, #ffc107 100%)
+      cursor: pointer
+      padding: 25px 27px
+      text-align: center
+      &-left 
+        left: 70px
+      &-right 
+        right: 70px
+        & img
+          transform: rotate(180deg)
+      & img
+        display: inline-block
+        // width: 12px
+        height: 22px
+  &-slide
+    width: 100px
+    height: 100px 
+    // transition: 0.3s  
+    vertical-align: bottom
+    // box-shadow: inset 0 0 10px rgba(114, 178, 204, 0.3)
+    outline: none !important
+    position: relative
+    padding-bottom: 100px
+    &__img 
+      width: auto
+      height: auto
+      max-width: 465px
+      // max-height: 100%
+      outline: none !important
+    &__sale
+      position: absolute
+      top: 0px
+      left: 65px
+      width: 170px
+      height: 100px
+      border-radius: 5px 20px 20px
+      background-color: #1565c0
+      text-align: left
+      padding: 15px
+      padding-left: 30px
+      color: #ffffff
+      font-size: 28px
+      font-weight: 700
+      font-style: italic
+      transition: 0.3s
+  &-arrow 
+    position: absolute
+    align-items: center
+    width: auto
+    height: auto
+    left: calc(50% - 6px)
+    bottom: -50px
+    &__item
+      width: 4px
+      height: 4px
+      background-color: #1565c0
+      opacity: 0.2
+      border-radius: 100%
+      margin-bottom: 7px
+      &-arrow 
+        width: 9px
+        height: 4px
+        position: relative
+        opacity: 0.2
+        &:after, &:before
+          position: absolute
+          content: ""
+          width: 5px
+          height: 2px
+          background-color: #1565c0
+        &:before
+          transform: rotate(40deg)
+          left: 0
+        &:after
+          transform: rotate(-40deg)
+          right: 0
+
+.header 
+  & .container
+    position: relative
+  & .slick-track
+    align-items: flex-end
+    display: flex !important
+  & .slick-current.slick-active.slick-slide img
+    width: auto !important
+    height: auto !important
+  & .slick-slide img 
+    // transition: 0.3s
+    width: 100px
+    height: 100px
+    margin-left: auto
+    margin-right: auto
+    &:after
+      content: ""
+      transition: 0.3s
+      opacity: 0
+  & .slick-current.slick-active.slick-center
+    padding: 25px 25px 0px 20px
+    max-width: 100%
+    width: 510px
+    height: 560px
+    position: relative
+    padding-bottom: 100px
+    &:after
+      content: ""
+      left: calc(50% - 180px)
+      bottom: 0
+      position: absolute
+      background-image: url(../img/header/shadow.png)
+      width: 346px;
+      height: 100px;
+      opacity: 0.6;
+
+
+// параллакс
+// html 
+//   overflow: hidden
+
+body 
+  position: relative
+  overflow-x: hidden
+  overflow-y: scroll
+.parallax
+  display: block
+  position: absolute
+  max-width: 100%
+  transform-origin: center
+  z-index: 0
+  overflow: hidden
+  &__img
+    left: 0
+    top: 0
+    position: absolute
+    
+
+.img
+  &_1
+    // max-width: 100%
+    // max-height: 100%
+    left: 0
+    top: 0
+    width: 1920px
+    height: 202px
+    & img 
+      // width: 1920px
+      // height: 202px
+  &_2
+    top: 440px
+    left: 0
+    width: 1920px;
+    height: 403px;
+  &_3
+    top: 560px
+    left: 0
+    width: 1920px;
+    height: 403px;
+  &_4
+    top: 357px
+    left: 190px
+    width: 103px;
+    height: 133px;
+  &_5
+    right: 43%
+    top: 400px
+    width: 66px;
+    height: 62px;
+  &_6
+    top: 500px
+    right: 40%
+    z-index: 10
+    width: 38px;
+    height: 32px;
+  &_7
+    z-index: 10
+    top: 700px
+    left: 40% 
+    width: 55px;
+    height: 50px;
+  &_8
+    left: 10px
+    bottom: 0
+    z-index: -1
+    width: 642px;
+    height: 530px;
+  &_9
+    right: 20px
+    bottom: 20%
+    width: 331px;
+    height: 352px;
+
+
+@media (min-width: 1024px)
+  .header-slider
+    &__arrow:hover
+      box-shadow: 0 2px 1px #b15f08, 0 15px 20px rgba(255, 173, 0, 0.7)
+      background-color: #ffa200
+
+@media (max-width: 1400px)
+  .parallax
+    display: none  
+@media (max-width: 1150px)
+  .header-title
+    text-align: center
+    &__third
+      margin-left: 0
+      display: block
+      margin-left: auto
+      margin-right: auto
+@media (max-width: 1024px)
+  .header
+    position: relative
+    background-image: linear-gradient(to top, #ffffff 0%, #b9d6e3 4%, #0e537b 100%)
+    padding-bottom: 58px
+    &:before
+      content: ""
+      width: 100%
+      height: 150px
+      position: absolute
+      top: 0
+      left: 0
+      background-image: url(../img/header/cloud-mobile.png)
+      background-size: 100% 100%
+      background-position: center bottom
+      background-repeat: no-repeat
+    &:after
+      content: ""
+      width: 100%
+      height: 300px
+      position: absolute
+      bottom: -65px
+      left: 0
+      background-image: url(../img/header/cloud-mobile-2.png)
+      background-size: 100% 100%
+      background-position: center top
+      background-repeat: no-repeat
+    &-block
+      flex-direction: column-reverse
+    &-price 
+      text-align: center
+      margin-left: auto
+      margin-right: auto
+      margin-top: -50px
+    &-slider
+      margin-top: 0
+      &__arrow
+        bottom: 60px
+
+@media (min-width: 786px)
+  .header .slick-current.slick-active.slick-center img
+    width: 511px;
+    height: 433px;
+@media (max-width: 1024px)
+  .header-arrow
+    display: none
+  .header-slider .header-slide__sale 
+    display: none
+@media (max-width: 768px)
+  .header-title
+    margin-bottom: 15px
+    &__one
+      font-size: 32px
+      margin-bottom: 5px
+    &__two
+      display: inline-block
+      font-size: 32px
+      margin-bottom: 20px
+    &__third
+      margin-left: 0
+      display: block
+      letter-spacing: 0.24px
+      font-size: 24px
+      margin-left: auto
+      margin-right: auto
+  .header-slider
+    max-width: 500px
+    &__wrap
+      max-width: 98%
+  .header-slide__sale.mobile-768
+    position: static
+    opacity: 1
+    width: auto
+    max-width: 220px
+    height: auto
+    text-align: center
+    margin-top: 0px
+    padding-left: 15px
+    margin-left: auto
+    margin-right: auto
+  .header
+    &-price 
+      &__one
+        letter-spacing: 0.24px
+@media (max-width: 546px)
+  .header-title
+    font-size: 16px
+  .header-slide
+    padding-bottom: 0
+  .header .slick-current.slick-active.slick-center
+    height: auto
+    & img
+      width: 300px !important
+  .header
+    &-slide__img
+      max-width: 300px
+@media (max-width: 400px)
+  .header-price__two
+    font-size: 62px
+  .header-title
+    font-size: 12px
+  .header
+    &-slider
+      height: 430px
+      &__arrow
+        &-left 
+          left: 55px
+        &-right 
+          right: 55px

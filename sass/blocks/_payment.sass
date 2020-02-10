@@ -1,0 +1,355 @@
+.payment
+  padding-top: 22px
+  background-image: url(../img/payment/payment-bg.png) 
+  background-repeat: no-repeat
+  background-position: center bottom
+  background-size: cover
+  &-block 
+    justify-content: space-around
+  &-title 
+    margin-bottom: 40px
+  &-item 
+    align-items: center
+    position: relative
+    margin-bottom: 30px
+    &:nth-child(odd)
+      &:after
+        position: absolute
+        content: ""
+        width: 169px
+        height: 25px
+        background-image: url(../img/payment/arrow-1.png) 
+        background-repeat: no-repeat
+        background-size: contain
+        left: 88%
+        top: 50%
+        z-index: 3
+    &:nth-child(2)
+      &:after
+        position: absolute
+        content: ""
+        width: 169px
+        height: 25px
+        background-image: url(../img/payment/arrow-2.png) 
+        background-repeat: no-repeat
+        background-size: contain
+        left: 88%
+        top: 0
+        z-index: 3
+    &__number
+      position: absolute
+      width: 30px
+      height: 30px
+      box-shadow: 0 2px 1px #002651
+      background-image: linear-gradient(to top, #1565c0 0%, #4e94e4 100%)
+      border-radius: 100%
+      display: block
+      right: 0
+      top: 9px
+      color: #ffffff
+      font-size: 1.2em
+      font-weight: 700
+      line-height: 30px
+    &__image 
+      width: 120px
+      height: 120px
+      background-image: url(../img/payment/item-img-bg.png) 
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 100% 100%
+      position: relative
+      z-index: 0
+      &:after
+        content: ""
+        width: 95px
+        height: 95px
+        position: absolute
+        border-radius: 100%
+        box-shadow: 0 10px 20px rgba(0, 38, 81, 0.15)
+        background-color: #ffffff
+        z-index: 1
+      &-img 
+        z-index: 2
+        max-width: 50px
+        max-height: 50px
+    &__desc
+      max-width: 190px
+      text-align: center
+      padding-top: 20px
+      font-size: 14px
+      line-height: 1.7
+      & span 
+        font-size: 0.9em
+        color: #78909c
+        display: inline-block
+        padding-top: 5px
+
+
+.faq
+  &-wrap
+    z-index: 1
+    padding-top: 37px
+  &-block
+    flex-wrap: wrap
+    max-height: 280px
+  &-item  
+    z-index: 1
+    width: 48%
+    height: 60px
+    border-radius: 15px 0
+    background-color: #ffffff
+    display: flex
+    align-items: center
+    margin-bottom: 10px
+    position: relative
+    box-shadow: 0 5px 20px rgba(0, 38, 81, 0.1)
+    &_active
+      z-index: 3  
+      border-radius: 15px 0 0 0 
+    &__title
+      display: flex
+      align-items: center
+      height: 60px
+      width: 100%
+      padding: 0 10px 0 25px
+      cursor: pointer
+    &__num 
+      display: inline-block
+      padding-right: 5px
+      color: #1565c0
+      font-size: 18px
+      font-weight: 600
+    &__question
+      display: inline-block
+      font-size: 18px
+      font-weight: 600
+      margin-right: 10px
+    &__open
+      display: block
+      min-width: 30px
+      min-height: 30px
+      border-radius: 100%
+      background-color: #ebf0f4
+      margin-left: auto
+      background-image: url(../img/arrow-blue.svg)
+      background-size: 30%
+      background-repeat: no-repeat
+      background-position: center center
+      transform: rotate(-90deg)
+      transition: 0.3s
+      &_active
+        background-color: #1565c0
+        background-image: url(../img/arrow.svg)
+        transform: rotate(90deg)
+  &-answer
+    position: absolute
+    top: 58px
+    left: 0
+    width: 100%
+    font-size: 13px
+    z-index: 3
+    background: #ffffff
+    box-shadow: 0 20px 20px rgba(0, 38, 81, 0.1)
+    border-radius: 0 0 15px 0
+    &__text
+      display: inline-block
+      padding: 25px 45px 25px 25px
+
+
+// FEEDBACK
+
+.feedback
+  &-wrap 
+    padding-top: 150px
+    position: relative
+    overflow: hidden
+    & .title
+      margin-bottom: 45px
+    &:before
+      content: "";
+      position: absolute;
+      left: -100%;
+      top: -180px;
+      width: 300%;
+      height: 200px;
+      z-index: 0;
+      opacity: 0.5;
+      background-image: url(../img/desc/clouds.png);
+      background-repeat: no-repeat;
+      background-size: contain
+      background-position: center center;
+  &-block 
+    z-index: 1
+    justify-content: space-between
+    flex-wrap: wrap
+  &-item 
+    width: 47%
+    position: relative
+    height: 290px
+    border-radius: 30px 0
+    background-color: #ffffff
+    margin-bottom: 30px
+    padding: 40px 30px
+    box-shadow: 0 13px 18px 5px rgba(0, 52, 112, 0.1)
+    // box-shadow: 0 20px 30px rgba(0, 52, 112, 0.1)
+    z-index: 1
+    &:after
+      content: ""
+      width: 90%
+      height: 10px
+      border-radius: 0 0 30px 30px
+      background-color: #e3f2fd
+      box-shadow: 0 20px 30px rgba(0, 52, 112, 0.1)
+      position: absolute
+      opacity: 0.8
+      left: 3%
+      bottom: -10px
+      z-index: -2
+    &__quote
+      position: absolute
+      width: 40px
+      height: 34px
+      right: 15px
+      bottom: 15px
+    &__image
+      margin-right: 25px
+      text-align: center
+    &__name
+      margin-top: 20px
+      margin-bottom: 15px
+      color: #252935
+      font-weight: 600
+      font-size: 18px
+    &__city
+      color: #90a4ae
+      font-size: 0.9em
+  &-text
+    line-height: 1.85
+    font-size: 13px
+  
+
+@media (max-width: 1200px)
+  .payment
+    &-item 
+      &:after
+        content: none !important
+  .faq
+    &-block 
+      max-width: 970px
+      width: 98%
+      max-height: 100%
+      height: auto
+      margin-left: auto
+      margin-right: auto
+    &-item 
+      flex-direction: column
+      width: 100%
+      height: auto
+      &__title
+        padding: 10px 25px
+        // height: auto
+    &-answer
+      position: static
+  .feedback
+    &-block 
+      justify-content: space-around
+    &-item 
+      width: 47%
+      max-width: 380px
+      flex-direction: column
+      height: auto
+      align-items: center
+      margin-left: 1%
+      margin-right: 1%
+@media (max-width: 992px)
+  .payment
+    &-block 
+      flex-wrap: wrap
+      justify-content: space-around
+    &-item 
+      width: auto
+      max-width: 250px
+  .faq
+    &-block 
+      max-width: 530px
+@media (max-width: 786px)
+  .payment
+    background-image: none
+  .faq
+    &-wrap
+      padding-bottom: 50px
+  .feedback
+    &-wrap
+      padding-top: 50px
+      padding-bottom: 30px
+      background-image: linear-gradient(to top, #ffffff 0%, #e3f2fd 10%, #e3f2fd 98%, #ffffff 100%)
+@media (max-width: 786px)
+  .payment
+    padding-bottom: 0
+    &-item 
+      margin-bottom: 25px
+  .faq
+    &-wrap 
+      & .title 
+        margin-bottom: 33px
+    &-item 
+      &__num
+        font-size: 13px
+      &__question
+        font-size: 13px
+        line-height: 1.6
+        font-weight: 500
+        letter-spacing: -0.2px
+    &-answer
+      &__text
+        font-size: 13px
+        line-height: 1.6
+        font-weight: 500
+  .feedback
+    &-wrap
+      & .title 
+        margin-bottom: 30px
+    &-item 
+      margin-left: 0  
+      margin-right: 0
+      padding: 25px 20px
+@media (max-width: 546px)
+  .feedback-item
+    width: 987% 
+    &__image
+      width: 100%  
+      height: 89px
+      margin-right: 0
+      flex-wrap: wrap
+      margin-bottom: 10px
+      align-items: flex-start
+      &-img
+        width: 89px
+        height: 89px
+    &__name
+      display: inline-block
+      // margin-left: -36px
+      margin-right: auto
+      margin-top: 25px
+      margin-bottom: 10px
+      text-align: left
+      font-size: 16px
+    &__city
+      display: inline-block
+      // margin-left: -36px
+      margin-right: auto
+      text-align: left
+      font-size: 13px
+  .feedback
+    &-text 
+      line-height: 1.95
+      letter-spacing: -0.18px
+@media (max-width: 450px)
+  .faq
+    &-item 
+      &__num
+        display: none
+      &__title 
+        padding: 15px 10px 10px 10px
+    &-answer__text
+      padding: 15px 10px 10px 10px
